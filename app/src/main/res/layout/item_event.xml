@@ -1,0 +1,171 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="10dp"
+    android:layout_weight="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.90"
+            android:id="@+id/list_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/imge1"-->
+                        <!--android:layout_width="64dp"-->
+                        <!--android:layout_height="64dp"-->
+                        <!--android:scaleType="centerCrop"-->
+                        <!--android:src="@mipmap/ic_launcher" />-->
+                    <com.alexzh.circleimageview.CircleImageView
+                        android:id="@+id/img1"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_gravity="center"
+                        app:view_borderWidth="2dp"
+                        app:view_borderColor="#cccccc" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.example.heshammostafa.diffrentrowdatarecycleview.customes.MyTextView
+                                android:id="@+id/Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:layout_marginRight="8dp"
+                                android:text="Ahmed Abdelkader "
+                                android:textColor="#ee6e73" />
+
+                            <com.example.heshammostafa.diffrentrowdatarecycleview.customes.MyTextView
+                                android:id="@+id/des"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:text="reposted acollection"
+                                android:textColor="#000" />
+
+
+                        </LinearLayout>
+
+                        <com.example.heshammostafa.diffrentrowdatarecycleview.customes.MyTextView
+                            android:id="@+id/H"
+                            android:padding="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="2017-04    15:21:30"
+                            android:textSize="10dp" />
+                        />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <com.example.heshammostafa.diffrentrowdatarecycleview.customes.MyTextView
+                   android:id="@+id/Hash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:text="reposted acollection"
+                    android:textColor="#000" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imagePro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_below="@+id/line2"
+                android:src="@mipmap/ic_launcher" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_weight="0.06"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.example.heshammostafa.diffrentrowdatarecycleview.customes.MyTextView
+                    android:id="@+id/NamePro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CAP" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.example.heshammostafa.diffrentrowdatarecycleview.customes.MyTextView
+                        android:id="@+id/Comation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Comation"
+                        android:textColor="#000" />
+
+                    <com.example.heshammostafa.diffrentrowdatarecycleview.customes.MyTextView
+                        android:id="@+id/price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="EGP499"
+                        android:textColor="#000" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/stat_sys_download" />
+
+
+
+</android.support.v7.widget.CardView>
